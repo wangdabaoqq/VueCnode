@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>VueCnode</h1>
 [![Build Status](https://www.travis-ci.org/wangdabaoqq/VueCnode.svg?branch=master)](https://www.travis-ci.org/wangdabaoqq/VueCnode)
 <h2>项目简介</h2>
@@ -57,3 +58,7 @@ fastclick 移动端点击延迟插件
 ![](http://op2gvlcz7.bkt.clouddn.com/SD.png)
 <h2><a href="http://Cnode.tyty.me">效果查看</a></h2>
 ![](http://op2gvlcz7.bkt.clouddn.com/F.png)
+=======
+# VueCnode
+小清新
+>>>>>>> e84bdba79e578f103ef5a3543000a98efc98df6c
