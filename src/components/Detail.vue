@@ -80,8 +80,8 @@
         </div>
       </div>
       <mback>ss</mback>
-      <div class="back">
-        <i @click.stop.prevent="$router.go(-1)" class="iconfont icon-fanhui"></i>
+      <div @click="goBack" class="back">
+        <i  class="iconfont icon-fanhui"></i>
       </div>
     </div>  
   </div>
@@ -137,6 +137,9 @@
               this.articleDetails.data.is_collect = true
             })
           }
+        },
+        goBack () {
+          this.$router.go(-1)
         },
         close () {
           this.publish = false
@@ -339,7 +342,7 @@
                   color $color-theme!important
               .time,.look,.remark
                 display inline-block
-                width 70px
+                width 80px
                 line-height 25px
                 text-align center
                 height 25px
@@ -367,7 +370,6 @@
       height 50px
       background $color-theme
       border-radius 100%
-      opacity .6
       text-align center
       .icon-fanhui
         font-size 40px
