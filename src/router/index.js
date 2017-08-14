@@ -19,7 +19,11 @@ const Detail = resolve => {
 }
 Vue.use(Router)
 export default new Router({
+<<<<<<< HEAD
   mode: 'history',
+=======
+  mode: 'hash',
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
   routes: [
     {
       path: '/',
@@ -72,10 +76,24 @@ export default new Router({
     }
   ],
   scrollBehavior (to, from, savedPosition) {
+<<<<<<< HEAD
     if (savedPosition) {
       return savedPosition
     } else {
       return { x: 0, y: 0 }
+=======
+    // 如果你的連結是帶 # 這種
+    // to.hash 就會有值(值就是連結)
+    // 例如 #3
+    console.log(savedPosition)
+    if (to.hash) {
+      return {
+        // 這個是透過 to.hash 的值來找到對應的元素
+        // 照你的 html 來看是不用多加處理這樣就可以了
+        // 例如你按下 #3 的連結，就會變成 querySelector('#3')，自然會找到 id = 3 的元素
+        selector: to.hash
+      }
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
     }
   }
 })

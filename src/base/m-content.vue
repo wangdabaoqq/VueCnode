@@ -78,8 +78,12 @@ export default {
       scroller: null,
       nomore: false,
       url: 'https://cnodejs.org/api/v1/topics?tab=all',
+<<<<<<< HEAD
       scrollValue: null,
       sectionId: ''
+=======
+      scrollValue: null
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
     }
   },
   created () {

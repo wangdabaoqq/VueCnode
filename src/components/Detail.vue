@@ -80,8 +80,13 @@
         </div>
       </div>
       <mback>ss</mback>
+<<<<<<< HEAD
       <div class="back">
         <i @click.stop.prevent="$router.go(-1)" class="iconfont icon-fanhui"></i>
+=======
+      <div @click="goBack" class="back">
+        <i  class="iconfont icon-fanhui"></i>
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
       </div>
     </div>  
   </div>
@@ -138,6 +143,12 @@
             })
           }
         },
+<<<<<<< HEAD
+=======
+        goBack () {
+          this.$router.go(-1)
+        },
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
         close () {
           this.publish = false
           this.dialog = false
@@ -335,9 +346,17 @@
               display inline-block
               .avatorName
                 padding-left 10px
+<<<<<<< HEAD
               .time,.look,.remark
                 display inline-block
                 width 70px
+=======
+                a
+                  color $color-theme!important
+              .time,.look,.remark
+                display inline-block
+                width 80px
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
                 line-height 25px
                 text-align center
                 height 25px
@@ -365,7 +384,10 @@
       height 50px
       background $color-theme
       border-radius 100%
+<<<<<<< HEAD
       opacity .6
+=======
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
       text-align center
       .icon-fanhui
         font-size 40px
@@ -419,11 +441,24 @@
         .commentuseravatar
           flex 1
         .commentInfo
+<<<<<<< HEAD
           flex 7
+=======
+          flex 6
+          .commentusername
+            a
+              color $color-theme!important
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
           .commentOther
             position absolute
             top 10px 
             right 10px
+<<<<<<< HEAD
+=======
+            line-height 25px
+            a
+              color $color-theme!important
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
           .comentReply
             padding-top 10px
             margin-bottom 30px

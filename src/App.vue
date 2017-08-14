@@ -23,6 +23,11 @@ export default {
 
 <style lang="stylus">
 @import "~common/stylus/variable"
+<<<<<<< HEAD
+=======
+.mu-menu-item-wrapper.active
+  color $color-theme!important
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
 .mu-buttom-item
   min-width auto!important
   height auto!important
@@ -57,7 +62,11 @@ export default {
     margin 0
     padding 0
     a
+<<<<<<< HEAD
       color $color-theme
+=======
+      color $color-theme!important
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
   h2
     border-bottom 1px solid #ccc
     font-size 24px

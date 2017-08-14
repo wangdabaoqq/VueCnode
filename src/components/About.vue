@@ -41,8 +41,11 @@ export default {
 }
 </script>
 <style lang="stylus">
+<<<<<<< HEAD
 a
   color #009688
+=======
+>>>>>>> 02199ea2cbf7e9ac2c05997645457b2f333ea8bb
 .layout
   background-color: rgb(236, 236, 236)
   .mu-appbar
