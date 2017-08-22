@@ -1,4 +1,5 @@
 # VueCnode
+
 [![Build Status](https://www.travis-ci.org/wangdabaoqq/VueCnode.svg?branch=master)](https://www.travis-ci.org/wangdabaoqq/VueCnode)
 ## 项目简介</h2>
   <pre>
@@ -14,6 +15,7 @@
 可以正常显示全部内容,但是切换页面又要重新登录。猜想及百度时发现,vuex在刷新时会清空数据,所以
 会出现以上问题,推荐使用localstorage,sessionstorage储存数据,但是我没有搞定。目前就是这样。
  </pre>
+`<blockquote>`
 ## 功能
 - [x] 首页渲染,下拉加载
 - [x] 页面详情，回复及点赞
