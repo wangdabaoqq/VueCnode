@@ -1,4 +1,3 @@
-
 1.项目克隆: git@git.oschina.net:wangdabaoqq/VueCnode.git
 2.安装依赖: npm install
 3.项目启动: npm run dev
