@@ -57,7 +57,7 @@ fastclick 移动端点击延迟插件
 ## 预览图
  ![预览1](http://op2gvlcz7.bkt.clouddn.com/cv.png)
  ![预览2](http://op2gvlcz7.bkt.clouddn.com/SD.png)
-## <a href="http://ou2hsk5xb.bkt.clouddn.com/node.apk">apk地址</a>
-## <a href="http://Cnode.tyty.me">效果查看</a>
+## [apk地址](http://ou2hsk5xb.bkt.clouddn.com/node.apk) 
+## [效果查看](http://Cnode.tyty.me)
  ![二维码](http://op2gvlcz7.bkt.clouddn.com/F.png)
 
