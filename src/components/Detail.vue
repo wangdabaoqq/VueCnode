@@ -79,9 +79,9 @@
           <h2>暂无评论哦。。。🤣</h2>
         </div>
       </div>
-      <mback>ss</mback>
-      <div class="back">
-        <i @click.stop.prevent="$router.go(-1)" class="iconfont icon-fanhui"></i>
+      <mback></mback>
+      <div @click="goBack" class="back">
+        <i  class="iconfont icon-fanhui"></i>
       </div>
     </div>  
   </div>
@@ -137,6 +137,9 @@
               this.articleDetails.data.is_collect = true
             })
           }
+        },
+        goBack () {
+          this.$router.go(-1)
         },
         close () {
           this.publish = false
@@ -335,9 +338,15 @@
               display inline-block
               .avatorName
                 padding-left 10px
+
               .time,.look,.remark
                 display inline-block
                 width 70px
+                a
+                  color $color-theme!important
+              .time,.look,.remark
+                display inline-block
+                width 80px
                 line-height 25px
                 text-align center
                 height 25px
@@ -419,11 +428,18 @@
         .commentuseravatar
           flex 1
         .commentInfo
-          flex 7
+
+          flex 6
+          .commentusername
+            a
+              color $color-theme!important
           .commentOther
             position absolute
             top 10px 
             right 10px
+            line-height 25px
+            a
+              color $color-theme!important
           .comentReply
             padding-top 10px
             margin-bottom 30px

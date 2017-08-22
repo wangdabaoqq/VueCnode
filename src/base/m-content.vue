@@ -235,5 +235,4 @@ export default {
         .title
           border-bottom 1px solid $color-theme-color
           padding 10px 0
-          font-weight 600
 </style>

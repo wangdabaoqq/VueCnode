@@ -47,6 +47,8 @@ export default {
     color $color-theme!important
   .mu-raised-button-wrapper
     height 0!important
+  .mu-buttom-item-wrapper
+    color #bbb
 .markdown-text 
   img
     display block
@@ -57,7 +59,7 @@ export default {
     margin 0
     padding 0
     a
-      color $color-theme
+      color $color-theme!important
   h2
     border-bottom 1px solid #ccc
     font-size 24px
