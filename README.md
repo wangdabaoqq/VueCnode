@@ -1,4 +1,5 @@
 <h1>VueCnode</h1>
+![](https://cloud.githubusercontent.com/assets/2024949/19027861/92879edc-8967-11e6-8e60-7987b6507c8d.gif)
 [![Build Status](https://www.travis-ci.org/wangdabaoqq/VueCnode.svg?branch=master)](https://www.travis-ci.org/wangdabaoqq/VueCnode)
 <h2>项目简介</h2>
 	本项目我借鉴了github上很多关于Cnode的项目,加上了一些自己的理解。最终敲定了VueCnode,当然我只能说是搬运工,项目采用的是vue技术构建.
