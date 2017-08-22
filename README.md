@@ -1,9 +1,11 @@
 # VueCnode
 [![Build Status](https://www.travis-ci.org/wangdabaoqq/VueCnode.svg?branch=master)](https://www.travis-ci.org/wangdabaoqq/VueCnode)
 ## 项目简介</h2>
-	本项目我借鉴了github上很多关于Cnode的项目,加上了一些自己的理解。最终敲定了VueCnode,当然我只能说是搬运工,项目采用的是vue技术构建.
+  <pre>
+本项目我借鉴了github上很多关于Cnode的项目,加上了一些自己的理解。最终敲定了VueCnode,当然我只能说是搬运工,项目采用的是vue技术构建.
+</pre>
 ## 总结
-<pre>
+  <pre>
 在我浏览了很多关于vuecnode的项目我认为写的很好的是<a href="https://github.com/lzxb/vue-cnode">lzxb</a>有兴趣的可以了解下。
 当然我在写cnode项目时,有几点我目前没有解决的第一是页面后退数据还原及滚动条位置还原,我百度及
 谷歌后发现这个问题有如下方法:结合<keep-alive>与scrollBehavior，经过实验与配置,非常好的没
@@ -11,8 +13,8 @@
 烦,可能过几天就想看了。(呵呵)。第二个没有解决的是我的message组件,我在用accesstoken登录后
 可以正常显示全部内容,但是切换页面又要重新登录。猜想及百度时发现,vuex在刷新时会清空数据,所以
 会出现以上问题,推荐使用localstorage,sessionstorage储存数据,但是我没有搞定。目前就是这样。
-</pre>
-<h2>功能</h2>
+ </pre>
+## 功能
 - [x] 首页渲染,下拉加载
 - [x] 页面详情，回复及点赞
 - [x] 消息列表
@@ -51,11 +53,11 @@ fastclick 移动端点击延迟插件
 4.代码发布: npm run build
 </pre>
 ## 项目结构脑图
-![脑图](http://op2gvlcz7.bkt.clouddn.com/vue.png)
+ ![脑图](http://op2gvlcz7.bkt.clouddn.com/vue.png)
 ## 预览图
-![预览1](http://op2gvlcz7.bkt.clouddn.com/cv.png)
-![预览2](http://op2gvlcz7.bkt.clouddn.com/SD.png)
+ ![预览1](http://op2gvlcz7.bkt.clouddn.com/cv.png)
+ ![预览2](http://op2gvlcz7.bkt.clouddn.com/SD.png)
 ## <a href="http://ou2hsk5xb.bkt.clouddn.com/node.apk">apk地址</a>
 ## <a href="http://Cnode.tyty.me">效果查看</a>
-![二维码](http://op2gvlcz7.bkt.clouddn.com/F.png)
+ ![二维码](http://op2gvlcz7.bkt.clouddn.com/F.png)
 
