@@ -22,7 +22,7 @@ EXPOSE 80
 # 为了减小镜像体积，尽可能将一些同类操作，集成到一个步骤中，如下
 RUN  npm install \
      && npm run build \
-     && cp -r dist/* /root/www \
+     && cp -r dist/* /var/www/html \
      && rm -rf /app
 
 # 以前台方式启动 nginx  
