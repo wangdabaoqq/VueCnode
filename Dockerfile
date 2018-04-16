@@ -6,10 +6,10 @@ RUN apt-get update \
     && apt-get install -y nginx
 
 # 指定工作目录
-WORKDIR /app
+WORKDIR /vueCnode
 
 # 将当前目录下的所有文件拷贝到工作目录下
-COPY . /app/
+COPY . /vueCnode/
 
 # 声明运行时容器提供服务端口
 EXPOSE 80
@@ -23,7 +23,7 @@ EXPOSE 80
 RUN  npm install \
      && npm run build \
      && cp -r dist/* /var/www/html \
-     && rm -rf /app
+     && rm -rf /vueCnode
 
 # 以前台方式启动 nginx  
 CMD ["nginx","-g","daemon off;"]
