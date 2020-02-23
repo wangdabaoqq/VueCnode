@@ -64,7 +64,24 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: About
+      // component: About,
+      redirect: '/about/abouts',
+      children: [
+        {
+          path: 'abouts',
+          component: About,
+          name: 'center',
+          hidden: true,
+          meta: { title: '个人中心' }
+        },
+        {
+          path: 'message',
+          component: Index,
+          name: 'center',
+          hidden: true,
+          meta: { title: '个人中心' }
+        }
+      ]
     },
     {
       path: '*',
