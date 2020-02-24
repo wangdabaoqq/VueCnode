@@ -57,7 +57,7 @@ fastclick 移动端点击延迟插件
 3.项目启动: npm run dev
 4.代码发布: npm run build
 </pre>
-sss
+
 ## 项目结构脑图
 ![脑图](http://qiniu.shanch.cn/Vue-Cnode.png)
 
