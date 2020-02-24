@@ -67,6 +67,6 @@ fastclick 移动端点击延迟插件
 
 ## [apk地址](http://ou2hsk5xb.bkt.clouddn.com/node.apk) 
 
-## [效果查看](http://Cnode.tyty.me)
+## [效果查看](https://wangdabaoqq.github.io/VueCnode/)
 ![二维码](http://qiniu.shanch.cn/F.png)
 
