@@ -8,12 +8,12 @@ import 'normalize.css/normalize.css'
 import timeago from 'timeago.js'
 import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
-import VueParticles from 'vue-particles'
+// import VueParticles from 'vue-particles'
 import App from './App'
 import router from './router'
 import store from './vuex'
 Vue.use(MuseUI)
-Vue.use(VueParticles)
+// Vue.use(VueParticles)
 Vue.use(VueLazyload, {
   preLoad: 1.3,
   loading: require('common/image/logo.png'),
