@@ -1,5 +1,5 @@
-import Vuex from 'vuex'
 import Vue from 'vue'
+import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -8,7 +8,17 @@ export default new Vuex.Store({
   },
   getters: {
     getUserInfo (state) {
-      return state.userInfo
+      let allKey = Object.keys(state.userInfo)
+      if (allKey.length > 0) {
+        return state.userInfo
+      } else {
+        let userInfo = window.localStorage.getItem('user')
+        console.log(userInfo, JSON.parse(userInfo))
+        if (userInfo) {
+          return JSON.parse(userInfo)
+        }
+      }
+      return {}
     }
   },
   mutations: {
@@ -18,7 +28,8 @@ export default new Vuex.Store({
   },
   actions: {
     setUserInfo ({commit}, user) {
-      window.window.sessionStorage.user = JSON.stringify(user)
+      window.localStorage.setItem('user', JSON.stringify(user))
+      // window.localStorage.user = JSON.stringify(user)
       commit('setUserInfo', user)
     }
   }

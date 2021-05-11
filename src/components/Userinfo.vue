@@ -10,7 +10,7 @@
         <input class="logout" title="退出" type="button" value="退出" @click="logout">
         <div class="fistContent">
           <div class="avator">
-            <img :title="userContent.loginname" :src="userContent.avatar_url">
+            <img :title="userInfo.loginname" :src="userInfo.avatar_url">
           </div>
           <div class="userdetail">
             <h3>{{userContent.loginname}}</h3>
@@ -29,7 +29,8 @@
                 <mu-tab value="shoucang" title="收藏的话题" />
             </mu-tabs>
           <div class="othertopic">
-            <div v-if="articleItems.length !== 0" class="article" v-for="article in articleItems">
+            <template v-if="articleItems.length !== 0" >
+            <div class="article" v-for="(article, index) in articleItems" :key="index">
               <div class="articleAvator">
                 <img :title="article.author.loginname" :src="article.author.avatar_url">
               </div>
@@ -38,6 +39,7 @@
                 <h2><router-link :to="{ path: 'detail', query: { id: article.id}}" :title="article.title">{{article.title}}</router-link></h2>
               </div>
             </div>
+            </template>
             <div v-if="articleItems.length === 0" class="userTips">
               <h2>暂无内容哦。。。🙃</h2>
             </div>
@@ -73,7 +75,27 @@ export default {
   },
   created () {
   },
+  mounted () {
+    // console.log(this.userInfo)
+    this.getMoreData()
+  },
   methods: {
+    getMoreData () {
+      let userLen = Object.keys(this.userInfo)
+      if (userLen.length > 0) {
+        this._getDate()
+        console.log(this.userInfo)
+        let url = `https://cnodejs.org/api/v1/user/${this.userInfo.loginname}`
+        this.axios.get(url).then((response) => {
+          console.log(response)
+          this.userContent = response.data.data
+          this.articleItems = response.data.data.recent_topics
+        }).catch((error) => {
+          this.error = 'accesstoken错误'
+          console.log(error)
+        })
+      }
+    },
     login () {
       if (this.accesstoken === '') {
         this.error = 'accesstoken不能为空'
@@ -94,18 +116,7 @@ export default {
         this.$router.push({
           path: '/userinfo'
         })
-        this._getDate()
-        // var user = window.localStorage.getItem('user')
-        // user = JSON.parse(user)
-        // this.loginname = user.loginname
-        let url = `https://cnodejs.org/api/v1/user/${this.userInfo.loginname}`
-        this.axios.get(url).then((response) => {
-          this.userContent = response.data.data
-          this.articleItems = response.data.data.recent_topics
-        })
-      }).catch((error) => {
-        this.error = 'accesstoken错误'
-        console.log(error)
+        this.getMoreData()
       })
     },
     handleTabChange (value) {

@@ -176,13 +176,15 @@ export default {
   .content
     overflow auto
     -webkit-overflow-scrolling touch
-    border 1px solid $color-theme-color
-    margin 5rem 0 3rem 0
+    // border 1px solid $color-theme-color
+    margin 4rem 0 4rem 0
     .container
       display flex
     .mlist 
       background $color-sub-theme
       padding 0
+      overflow auto
+      height calc(100vh - 120px)
       .list
         padding 15px 15px 0 15px
         margin-bottom 15px

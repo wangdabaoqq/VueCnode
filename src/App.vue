@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <transition  name="fadeIn">
+    <!-- <transition  name="fadeIn"> -->
       <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>
       </keep-alive>
-    </transition>
+    <!-- </transition> -->
       <router-view  v-if="!$route.meta.keepAlive"></router-view> 
   </div>
 </template>
@@ -108,5 +108,7 @@ export default {
 .fadeIn-enter,.fadeIn-leave-active {
   opacity: 0;
 }
-
+body, html {
+  overflow hidden
+}
 </style>
