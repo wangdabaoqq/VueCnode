@@ -2,7 +2,7 @@ name: Build and Deploy
 on: [push]
 jobs:
   build:
-    runs-on: windows-latest # The first job utilizes windows-latest
+    runs-on: ubuntu-latest # The first job utilizes windows-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
@@ -12,16 +12,9 @@ jobs:
           npm install
           npm run build
 
-  deploy:
-    needs: [build] # The second job must depend on the first one to complete before running, and uses ubuntu-latest instead of windows.
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
-
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.1.3
+        uses: JamesIves/github-pages-deploy-action@4.1.2
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          branch: gh-pages
-          folder: build # The deployment folder should match the name of the artifact. Even though our project builds into the 'build' folder the artifact name of 'site' must be placed here.
+          token: ${{ secrets.ACCESS_TOKEN }}s
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
