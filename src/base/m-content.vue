@@ -184,7 +184,7 @@ export default {
       background $color-sub-theme
       padding 0
       overflow auto
-      height calc(100vh - 120px)
+      // height calc(100vh - 120px)
       .list
         padding 15px 15px 0 15px
         margin-bottom 15px
