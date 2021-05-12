@@ -59,13 +59,13 @@ fastclick 移动端点击延迟插件
 </pre>
 
 ## 项目结构脑图
-![脑图](http://qiniu.shanch.cn/Vue-Cnode.png)
+![脑图](http://image.pearadmin.com/Vue-Cnode.png)
 
 ## 预览图
 ![预览1](http://qiniu.shanch.cn/cv.png)
 ![预览2](http://qiniu.shanch.cn/SD.png)
 
-## [apk地址](http://ou2hsk5xb.bkt.clouddn.com/node.apk) 
+## [apk地址](http://image.pearadmin.com/node.apk) 
 
 ## [效果查看](https://wangdabaoqq.github.io/VueCnode/)
 ![二维码](http://qiniu.shanch.cn/F.png)
