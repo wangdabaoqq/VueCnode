@@ -108,7 +108,4 @@ export default {
 .fadeIn-enter,.fadeIn-leave-active {
   opacity: 0;
 }
-body, html {
-  overflow hidden
-}
 </style>
