@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import About from 'components/About'
 import Create from 'components/Create'
+import Loading from 'components/Loading'
 import Message from 'components/Message'
 import Userinfo from 'components/Userinfo'
-import About from 'components/About'
-import Loading from 'components/Loading'
+import Vue from 'vue'
+import Router from 'vue-router'
 // import NotFoundComponent from 'base/404'
 
 const Index = resolve => {
@@ -19,7 +19,7 @@ const Detail = resolve => {
 }
 Vue.use(Router)
 export default new Router({
-  mode: 'hash',
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -59,7 +59,10 @@ export default new Router({
     {
       path: '/detail',
       name: 'detail',
-      component: Detail
+      component: Detail,
+      meta: {
+        keepAlive: true
+      }
     },
     {
       path: '/about',
@@ -89,10 +92,22 @@ export default new Router({
     }
   ],
   scrollBehavior (to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    } else {
-      return { x: 0, y: 0 }
-    }
+    let el = document.querySelectorAll('.mlist')
+    let esl = document.querySelectorAll('#app')
+    // let elss = document.querySelectorAll('.content')
+    // console.dir(elss[0])
+    console.dir(el[0])
+    console.dir(esl[0])
+    // if (savedPosition) {
+    //   console.log(savedPosition)
+    //   return savedPosition
+    // } else {
+    //   return { x: 0, y: 0 }
+    // }
+    // console.log(el)
+    let elss = document.querySelectorAll('.content')
+    console.dir(elss)
+    console.dir(document.documentElement)
+    // if (el) return { x: el[0].scrollLeft, y: el[0].scrollTop }
   }
 })
