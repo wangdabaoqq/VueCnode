@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "js-yaml": "^3.13.1",
     "muse-ui": "^2.1.0",
     "normalize.css": "^8.0.1",
